@@ -1,5 +1,5 @@
 
-const TecherSal=()=>{
+const TeacherSal=()=>{
 
     return(<>
     Techer sal
@@ -10,4 +10,4 @@ const TecherSal=()=>{
     }
     
     
-    export default TecherSal;
+    export default TeacherSal;

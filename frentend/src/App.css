@@ -1,10 +1,48 @@
 
-body{
-  display: flex;
-  justify-content: center;
-}
+
 a{
 
+color: white;
 margin: 30px;
 text-decoration: none;
+}
+.insert{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  background-color: #dfdfdf;
+  box-shadow: black 0px 0px 5px 2px ;
+
+}
+
+input{
+  margin: 9px;
+padding: 3px;
+}
+label{
+  text-align: center;
+}
+
+#btn{
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.header{
+display: flex;
+justify-content: center;
+background-color: rgb(110, 54, 35);
+}
+
+.hpage{
+display: flex;
+  justify-content: center;
+  align-items: center;
 }

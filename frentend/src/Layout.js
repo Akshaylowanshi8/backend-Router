@@ -1,15 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
 
-
 const Layout=()=>{
 
 
-    return(<>
-
+return(<>
 <div className="header">
 <Link to="home">Home</Link>
-<Link to="tech">TecherRec</Link>
-<Link to="techsal">Techersal</Link>
+<Link to="insert">Insert</Link>
+
+
+<Link to="tech">TeacherRec</Link>
+<Link to="techsal">TeacherSal</Link>
 
 <Link to="EmplRec">EmployeeRec</Link>
 <Link to="EmplSal">EmployeeSal</Link>
@@ -17,12 +18,6 @@ const Layout=()=>{
 
 <Link to="student">studentRec</Link>
 <Link to="studentFee">studentFee</Link>
-
-
-
-
-
-
 
 
 

@@ -2,12 +2,13 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Layout from './Layout';
 import './App.css';
 import Home from './pages/Home';
-import TecherRec from './pages/TecherRec';
+import TeacherRec from './pages/TeacherRec';
 import EmployeeRec from './pages/EmployeeRec';
 import StudentRec from './pages/StudentRec';
-import TecherSal from './pages/TecherSal';
+import TeacherSal from './pages/TeacherSal';
 import EmployeeSal from './pages/EmplSal';
 import StudentFee from './pages/StudentFee';
+import Insert from './pages/insert';
 
 
 function App() {
@@ -18,8 +19,10 @@ function App() {
 <Route path='/' element={<Layout/>}>
 <Route index element={ <Home/> } />
 <Route path='home' element={ <Home/> } />
-<Route path='tech' element={ <TecherRec/> } />
-<Route path='techsal' element={ <TecherSal/> } />
+<Route path='insert' element={ <Insert/> } />
+
+<Route path='tech' element={ <TeacherRec/> } />
+<Route path='techsal' element={ <TeacherSal/> } />
 
 <Route path='EmplRec' element={ <EmployeeRec/> } />
 <Route path='EmplSal' element={ <EmployeeSal/> } />
