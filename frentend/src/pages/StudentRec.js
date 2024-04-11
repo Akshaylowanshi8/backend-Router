@@ -13,19 +13,36 @@ const StudentRec=()=>{
 
 let ans=Empdata.map((e)=>{
 return(<>
-<h2 className="">{e.StuName}</h2>
+ <tr>
+    <td>{e.StuName}</td>
+    <td>{e.RollNo}</td>
+    <td>{e.city}</td>
+    <td>{e.Fees}</td>
+ </tr>
+
+
 </>)
 
 })
 
  useEffect(()=>{
        Dataload();
-       console.log(Empdata);
-       },[])
+        },[])
 
 
     return(<>
+
+    <table>
+<tr>
+<td>Student Name</td>
+<td>RollNo</td>
+<td>City</td>
+<td>fees</td>
+</tr>
+
 {ans}
+    </table>
+
     </>)
     }
     

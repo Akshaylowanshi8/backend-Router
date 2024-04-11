@@ -11,7 +11,7 @@ res.send("hello your fee is 30000")
 const StudentRecInsert=async(req,res)=>{
     let city=req.body.city;
     let fee =req.body.fee;   
-    let name =req.body.rollno;
+    let name =req.body.name;
     let rollno=req.body.rollno;
  const studentData = new StudModal({
     StuName:name,
