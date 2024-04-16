@@ -1,8 +1,7 @@
 
 
 a{
-
-color: white;
+  color: white;
 margin: 30px;
 text-decoration: none;
 }
@@ -47,11 +46,22 @@ display: flex;
   align-items: center;
 }
 
-table {
-  width: 90%;
+table, td, th {
+  border: 2px solid black;
 }
 
-td{
-  border: solid 2px red;
+table {
+  border-collapse: collapse;
+ width:90%;
+}
 
+th {
+background-color: #c08e8e;
+  height: 70px;
+}
+
+
+.tdiv{
+display: flex;
+  justify-content: center;
 }

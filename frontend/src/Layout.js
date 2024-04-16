@@ -6,13 +6,16 @@ const Layout=()=>{
 return(<>
 <div className="header">
 <Link to="home">Home</Link>
-<Link to="insert">Insert</Link>
+<Link to="insert">insertStudent</Link>
+<Link to="insertu">InsertUser</Link>
 
 
-<Link to="tech">TeacherRec</Link>
-<Link to="techsal">TeacherSal</Link>
 
-<Link to="EmplRec">EmployeeRec</Link>
+
+<Link to="tech">insertAuthoc</Link>
+<Link to="techsal">AuthorRec</Link>
+
+<Link to="userRec">UserRecord</Link>
 <Link to="EmplSal">EmployeeSal</Link>
 
 

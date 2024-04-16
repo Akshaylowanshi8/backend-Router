@@ -26,18 +26,15 @@ setdata( {
 return<>
 <div className="hpage">
 <div className="insert">
-<label> Name :<input name="name" className=""  value={data.name} onChange={handleinput}/></label>
-<label> Roll No :<input name="rollno" className=""value={data.rollno} onChange={handleinput} /></label>
-<label>City :<input name="city" className=""value={data.city} onChange={handleinput} /></label>
-<label>Fees :<input name="fee" className=""value={data.fee} onChange={handleinput} /></label>
-<label> <button  id="btn" onClick={onsubmit}>Save</button></label>
+ Name :<input name="name" className=""  value={data.name} onChange={handleinput}/>
+ Roll No :<input name="rollno" className=""value={data.rollno} onChange={handleinput} />
+City :<input name="city" className=""value={data.city} onChange={handleinput} />
+Fees :<input name="fee" className=""value={data.fee} onChange={handleinput} />
+ <button   onClick={onsubmit}>Save</button>
 
 </div>
 </div>
 
-
-
-</>
-}
+</>}
 
 export default Insert;

@@ -17,9 +17,9 @@ const Home=()=>{
  },[])
 
 
+ 
 
-
-    return(<>
+return(<>
 
  helllo :{homedata}
 

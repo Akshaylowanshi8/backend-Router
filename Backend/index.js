@@ -7,22 +7,22 @@ require('dotenv').config()
 const cors = require('cors');
 app.use(cors());
 
-//  -> its a middil wear 
+//  -> its a middil Weare 
 const bodyparser = require('body-parser')
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
 
-
 //mongodb connection
-mongoose.connect(process.env.DATABASE_URL)
+mongoose.connect(process.env.DATABASE_URL+process.env.DBNAME)
 .then(console.log(" datbase connected "));
 
+
 const StuRouts =require("./Routers/StudentRoutes")
+
 
 app.get("/home",(req,res)=>{
 res.send("hello get home")
 })
-
 //middilweare  app type 
 const mycollege=(req,res,next)=>{
 req.mycol="we are cybrom student "
@@ -52,8 +52,3 @@ const port = process.env.PORT || 8000;
 app.listen(port, () =>{ 
     console.log((`Example app listening on port ${port}!`))
   })
-
-
-
-
-
