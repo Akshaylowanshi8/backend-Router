@@ -13,6 +13,10 @@ router.post("/user", Stucon.UserAdd)
 router.get("/userRec",Stucon.UserRec)
 router.post("/autorAdd",Authorcon.AuthorAdd)
 router.get("/AuthorDis",Authorcon.AuthorDis)
+router.post("/Addbook",Authorcon.Addbook)
+router.get("/BookDis",Authorcon.BookDis)
+
+
 
 
 module.exports=router;

@@ -14,6 +14,8 @@ return(<>
 
 <Link to="tech">insertAuthoc</Link>
 <Link to="techsal">AuthorRec</Link>
+<Link to="bookdis">BookDis</Link>
+
 
 <Link to="userRec">UserRecord</Link>
 <Link to="EmplSal">EmployeeSal</Link>
@@ -21,7 +23,6 @@ return(<>
 
 <Link to="student">studentRec</Link>
 <Link to="studentFee">studentFee</Link>
-
 
 
 </div>

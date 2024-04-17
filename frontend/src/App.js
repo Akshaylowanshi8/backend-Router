@@ -10,6 +10,8 @@ import Insert from './pages/insertStudent';
 import InsertUser from './pages/Insertuser';
 import UserRec from './pages/UserRec';
 import AuthorDis from './pages/AuthorDis';
+import Addbook from './pages/Addbook';
+import BookDis from './pages/BookDis';
 
 
 function App() {
@@ -22,6 +24,10 @@ function App() {
 <Route path='home' element={ <Home/> } />
 <Route path='insert' element={ <Insert/> } />
 <Route path='insertu'element={<InsertUser/>}/>
+<Route path='Addbook/:id' element={<Addbook/>}/>
+<Route path='bookdis' element={<BookDis/>}/>
+
+
 
 <Route path='tech' element={ <TeacherRec/> } />
 <Route path='techsal' element={ <AuthorDis/> } />

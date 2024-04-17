@@ -24,14 +24,10 @@ setinput
  {aname:"",
  book:" ",
  price:" ",
-
-
 }
 
 )
-
-
-    }
+}
 return(<>
 <div className="hpage">
 <div className="insert">
