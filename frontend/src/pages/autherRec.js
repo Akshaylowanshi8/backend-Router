@@ -35,11 +35,12 @@ Author Name : <input className="" name="aname" value={input.aname} onChange={han
 BookTitel: <input className="" name="book" value={input.book} onChange={handinput}  />
 Price : <input className="" name="price" value={input.price} onChange={handinput}/>
 <button onClick={senddata} >Add Author</button>
+
+
 </div>
 
+
 </div>
-
-
 </>)
 }
 

@@ -9,5 +9,5 @@ const StudentSchema=new mongoose.Schema(
         Fees:Number,
        
     }
-);
+)
 module.exports=mongoose.model("StudentData",StudentSchema)

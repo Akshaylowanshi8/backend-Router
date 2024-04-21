@@ -12,6 +12,8 @@ import UserRec from './pages/UserRec';
 import AuthorDis from './pages/AuthorDis';
 import Addbook from './pages/Addbook';
 import BookDis from './pages/BookDis';
+import Login from './pages/Login';
+import Signin from './pages/Signin';
 
 
 function App() {
@@ -21,6 +23,12 @@ function App() {
 <Routes>
 <Route path='/' element={<Layout/>}>
 <Route index element={ <Home/> } />
+
+<Route path='login' element={ <Login/>} />
+<Route path='signin' element={ <Signin/> } />
+
+
+
 <Route path='home' element={ <Home/> } />
 <Route path='insert' element={ <Insert/> } />
 <Route path='insertu'element={<InsertUser/>}/>
@@ -36,7 +44,6 @@ function App() {
 <Route path='EmplSal' element={ <EmployeeSal/> } />
 
 <Route path='Student' element={ <StudentRec/> } />
-<Route path='StudentFee' element={ <StudentFee/> } />
 
 </Route>
 </Routes>

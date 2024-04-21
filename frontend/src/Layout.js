@@ -5,6 +5,11 @@ const Layout=()=>{
 
 return(<>
 <div className="header">
+<Link to="signin">Sign in</Link>
+<Link to="login">Log in</Link>
+
+
+
 <Link to="home">Home</Link>
 <Link to="insert">insertStudent</Link>
 <Link to="insertu">InsertUser</Link>
@@ -22,7 +27,6 @@ return(<>
 
 
 <Link to="student">studentRec</Link>
-<Link to="studentFee">studentFee</Link>
 
 
 </div>

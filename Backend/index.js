@@ -7,6 +7,7 @@ require('dotenv').config()
 const cors = require('cors');
 app.use(cors());
 
+
 //  -> its a middil Weare 
 const bodyparser = require('body-parser')
 app.use(bodyparser.urlencoded({ extended: true }))

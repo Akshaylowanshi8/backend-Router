@@ -51,17 +51,9 @@ res.status(200).json({user,Profile})
 }
 
 const UserRec =async(req,res )=>{
-
 const profileData=await ProfModal.find().populate("userID");
 // console.log(profileData);
     res.send(profileData)
-   
-
-
-
-
-
-
 }
 
 

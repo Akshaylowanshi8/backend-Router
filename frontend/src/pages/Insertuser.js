@@ -11,7 +11,7 @@ let value=e.target.value;
 setdata(values=>({...values,[name]:value}))
 // console.log(data);
 }
-console.log(data);
+// console.log(data);
 const onsubmit =()=>{
     let api="http://localhost:8000/Student/user"
     axios.post(api,data).then((res)=>{
