@@ -4,7 +4,7 @@ const sinupSchema=new mongoose.Schema(
 
     {
         
-        name:String,
+        name:String ,
         Email:String,
         PassWord:String,
      }

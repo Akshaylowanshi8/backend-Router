@@ -4,7 +4,9 @@ const BookModel = require("../Models/BookModal");
 const SinupModel=require("../Models/sinupModal");
 const jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
-var salt = bcrypt.genSaltSync(10);
+// var salt = bcrypt.genSaltSync(10);
+var secret_key="akshay";
+let user_id ="";
 const AuthorAdd=async(req,res)=>{
     let Aname =req.body.aname;
     let price =req.body.price;
@@ -51,13 +53,35 @@ var hash = bcrypt.hashSync(pas,10);
 console.log(hash);
 let  user =await SinupModel.create({name:username,Email:Email,PassWord:hash})
     res.send("save")
-    
+    }
+
+  
+// ------------------Login----------------   
+ const Login=async(req,res)=>{
+
+let {name,password}=req.body;
+const user=await SinupModel.findOne({name})
+
+if(!user){
+
+    res.send("invalid user")
 }
 
+const isvalidpass = await bcrypt.compare(password,user.PassWord)
+// console.log(isvalidpass);
+if(!isvalidpass)
+{
+   return res.send("invalid password")
+}
+
+const token = jwt.sign({userid:user_id,username:user.name,email:user.Email},secret_key)
+console.log(token);
+        res.status(200).json({token,username:user.name})
+}
 module.exports={AuthorAdd,
     AuthorDis,
     Addbook,
     BookDis,
-    signupp
-
+    signupp,
+    Login
 }
