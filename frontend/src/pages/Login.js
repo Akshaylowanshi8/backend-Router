@@ -50,8 +50,7 @@ const Login=()=>{
             <button onClick={Login}>Login</button>
             <button type="button" >Create an Account</button>
           </form>
-
-    </>)
+          </>)
 }
 
 export default Login ;

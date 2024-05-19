@@ -27,6 +27,8 @@ return(<>
 
 
 <Link to="student">studentRec</Link>
+<Link to="imgup">imageuplode</Link>
+
 
 
 </div>

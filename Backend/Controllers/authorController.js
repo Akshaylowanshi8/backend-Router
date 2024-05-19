@@ -25,7 +25,6 @@ const AuthorDis=async(req,res)=>{
     }
 
 const Addbook =async(req,res)=>{
-
     let aid=req.body.id;
     let booktital=req.body.book;
     let price =req.body.price;
@@ -54,8 +53,6 @@ console.log(hash);
 let  user =await SinupModel.create({name:username,Email:Email,PassWord:hash})
     res.send("save")
     }
-
-  
 // ------------------Login----------------   
  const Login=async(req,res)=>{
 
@@ -73,7 +70,6 @@ if(!isvalidpass)
 {
    return res.send("invalid password")
 }
-
 const token = jwt.sign({userid:user_id,username:user.name,email:user.Email},secret_key)
 console.log(token);
         res.status(200).json({token,username:user.name})

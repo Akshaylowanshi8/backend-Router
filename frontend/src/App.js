@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import TeacherRec from './pages/autherRec';
 import StudentRec from './pages/StudentRec';
 import EmployeeSal from './pages/EmplSal';
-import StudentFee from './pages/StudentFee';
+// import StudentFee from './pages/StudentFee';
 import Insert from './pages/insertStudent';
 import InsertUser from './pages/Insertuser';
 import UserRec from './pages/UserRec';
@@ -14,6 +14,7 @@ import Addbook from './pages/Addbook';
 import BookDis from './pages/BookDis';
 import Login from './pages/Login';
 import Signin from './pages/Signin';
+import ImageUpload from './pages/imageUpload';
 
 
 function App() {
@@ -26,9 +27,6 @@ function App() {
 
 <Route path='login' element={ <Login/>} />
 <Route path='signin' element={ <Signin/> } />
-
-
-
 <Route path='home' element={ <Home/> } />
 <Route path='insert' element={ <Insert/> } />
 <Route path='insertu'element={<InsertUser/>}/>
@@ -44,6 +42,8 @@ function App() {
 <Route path='EmplSal' element={ <EmployeeSal/> } />
 
 <Route path='Student' element={ <StudentRec/> } />
+<Route path='imgup' element={ <ImageUpload/> } />
+
 
 </Route>
 </Routes>
